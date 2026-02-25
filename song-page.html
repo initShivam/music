@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songs</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: inter, sans-serif;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    .song-page {
+        max-width: 1520px;
+    }
+
+    h1 {
+        display: flex;
+        color: rgb(81, 199, 49);
+        justify-content: center;
+        padding: 6px   ;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .song-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border: 5px solid #f5f5f5cc;
+        height: 200px;
+        width: 200px;
+        border-radius: 25px;
+        margin: 10px;
+        margin-top: 30px;
+        transition: 0.4s;
+        padding-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .song-card:hover {
+        transform: translateY(-10px);
+        scale: 1.09;
+
+    }
+
+    .song-card span {
+        margin-top: 6px;
+    }
+
+    .cover-img {
+        height: 180px;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+
+
+    .bottom {
+        position: sticky;
+        height: 130px;
+        background-color: black;
+        color: white;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #myprogressbar {
+        width: 80vw;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .icon {
+        margin-top: 15px;
+        background-color: black;
+        color: white;
+    }
+
+    i {
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    .icon img {
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+    }
+
+    .songinfo {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 09vw;
+        margin-top: -70px;
+    }
+
+    .songinfo img {
+        margin-bottom: 40px;
+        opacity: 0;
+        transition: opacity 0.4s ease-in;
+    }
+
+    .songname {
+        margin-top: 20px;
+    }
+
+    #new {
+        display: flex;
+    }
+</style>
+
+<body>
+    <h1><b>Most Popular Songs</b></h1>
+    <h1><b>Old is Gold</b></h1>
+    <section classs="song-page">
+
+        <ul>
+            <li>
+                <div onClick="playSong(1)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojaye</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(2)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname"> Der Na Hojaye</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(3)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname"> Der Na Hojaye</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(4)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojaye </span></div>
+            </li>
+            <li>
+                <div onClick="playSong(5)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname"> Der Na Hojaye</span></div>
+            </li>
+        </ul>
+
+        <br>
+
+        <ul>
+            <li>
+                <div onClick="playSong(6)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojaye</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(7)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojayer</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(8)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojaye</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(9)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname"> Der Na Hojaye</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(10)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojaye</span></div>
+            </li>
+        </ul>
+
+        <br>
+
+        <ul>
+            <li>
+                <div onClick="playSong(11)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojaye</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(12)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojaye</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(13)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojaye</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(14)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojaye</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(15)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojaye</span></div>
+            </li>
+        </ul>
+
+        <br>
+
+        <ul>
+            <li>
+                <div onClick="playSong(16)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojaye</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(17)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojaye</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(18)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojaye</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(19)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojaye</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(20)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojaye</span></div>
+            </li>
+        </ul>
+
+        <br>
+
+        <ul>
+            <li>
+                <div onClick="playSong(21)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojaye</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(22)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname"> Der Na Hojaye</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(23)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname"> Der Na Hojaye</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(24)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname"></span></div>
+            </li>
+            <li>
+                <div onClick="playSong(25)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojaye</span></div>
+            </li>
+        </ul>
+
+        <br>
+
+        <ul>
+            <li>
+                <div onClick="playSong(26)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojaye</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(27)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojayes</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(28)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojaye</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(29)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojaye</span></div>
+            </li>
+            <li>
+                <div onClick="playSong(30)" class="song-card"><img class="cover-img" src="song_covers/1.jpg"
+                        alt="image cover"><span class="songname">Der Na Hojaye</span></div>
+            </li>
+        </ul>
+
+
+
+
+
+        <div class="bottom">
+
+            <div class="songinfo">
+                <img src="44zG.gif" width="1250px" height="58px" id="gift">
+            </div>
+
+            <input type="range" name="range" id="myprogressbar" min="0" max="100" value="0">
+            <br>
+            <span id="mastersongname">Ankhon Ki Gustakhiya</span>
+
+            <div class="icon">
+                <i class="fas fa-3x fa-step-backward" id="previous"></i>
+                <i class="fas fa-3x fa-play-circle" id="masterPlay"></i>
+                <i class="fas fa-3x fa-step-forward" id="next"></i>
+            </div>
+
+
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/f794a1c430.js" crossorigin="anonymous"></script>
+    <script src="song_page.js"></script>
+</body>
+
+</html>

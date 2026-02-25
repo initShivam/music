@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <!-- <link rel="stylesheet" href="stylee.css"> -->
+    <link rel="stylesheet" href="chat.css">
+    <script src="https://kit.fontawesome.com/f794a1c430.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- <nav> 
+        <ul>
+            <li class="brand"><img src="PURANI YAADE.png" alt="music icon"></li>
+            <li class="title">PURANI YAADE</li>
+            <div class="left">
+                <a href="#home-page">
+                    <li>Home </li>
+                </a>
+                <a href="song-page.html">
+                    <li>Songs</li>
+                </a>
+                <a href="about.html">
+                    <li>About</li>
+                </a> -->
+                <!-- <input onchange="handleChange()" id="search" type="text"> --> 
+            <!-- </div>
+        </ul>
+    </nav> -->
+    <nav>
+        <div class="nav-container">
+            <div class="brand">
+                <img src="PURANI YAADE.png" alt="Logo">
+                <span class="title">PURANI YAADE</span>
+
+                <button id="hamburger">☰</button>
+
+            <div id="nav-links">
+                <a href="#home-page">Home</a>
+                <a href="song-page.html">Songs</a>
+                <a href="about.html">About</a>
+            </div>
+            </div>
+            
+        </div>
+    </nav>
+
+    <section id="home-page">
+
+        <div class="container">
+
+            <div class="songlist">
+                <h1>Best of Kumar Sanu- Purani Yaade</h1>
+                <div class="songItemscontainer">
+                    
+                    <div class="songItem">  
+                        <img class="cover" rc="music bg.jpg">
+                        <span class="songname">Let me Love you</span>
+                        <span class="songlistplay"><span class="timestamp">05:45<i id="0"class="far songitemplay fa-play-circle"></i></span></span>
+                       
+                    </div>
+                    
+                    <div class="songItem">
+                        
+                        <img class="cover" src="music bg.jpg">
+                        <span class="songname">Let me Love you</span>
+                        <span class="songlistplay"><span class="timestamp">05:06<i id="1"class="far songitemplay fa-play-circle"></i></span></span>
+                       
+                        
+                    </div>
+
+                    <div class="songItem">
+                        
+                        <img class="cover" src="music bg.jpg">
+                        <span class="songname">Let me Love you</span>
+                        <span class="songlistplay"><span class="timestamp">06:08<i id="2" class="far songitemplay fa-play-circle"></i></span></span>
+                    </div>
+
+                    <div class="songItem">
+                        
+                        <img class="cover" src="music bg.jpg">
+                        <span class="songname">Let me Love you</span>
+                        <span class="songlistplay"><span class="timestamp">05:48<i id="3"class="far songitemplay fa-play-circle"></i></span></span>
+                       
+                    </div>
+
+                    <div class="songItem">
+                        
+                        <img class="cover" src="music bg.jpg">
+                        <span class="songname">Let me Love you</span>
+                        <span class="songlistplay"><span class="timestamp">05:35<i id="4"class="far songitemplay fa-play-circle"></i></span></span>
+                       
+                    </div>
+
+                    <div class="songItem">
+                        
+                        <img class="cover" src="music bg.jpg">
+                        <span class="songname">Let me Love you</span>
+                        <span class="songlistplay"><span class="timestamp">08:13<i id="5"class="far songitemplay fa-play-circle"></i></span></span>
+                       
+                    </div>
+
+                    <div class="songItem">
+                        
+                        <img class="cover" src="music bg.jpg">
+                        <span class="songname">Let me Love you</span>
+                        <span class="songlistplay"><span class="timestamp">05:09<i id="6"class="far songitemplay fa-play-circle"></i></span></span>
+                       
+                    </div>
+
+                    <!-- <div class="songItem">
+                        <img class="cover" src="music bg.jpg">
+                        <span class="songname">Let me Love you</span>
+                        <span class="songlistplay"><span class="timestamp">05:04<i id="7"class="far songitemplay fa-play-circle"></i></span></span>
+                    </div> -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="bottom">
+
+            <div class="songinfo">
+                <img src="gif_music.gif" width="1200px" id="gift">
+            <input type="range" name="range" id="myprogressbar" min="0" max="100" value="0">
+
+            </div>
+
+            
+            <span id ="mastersongname">Tumsa Koi Pyaara</span>
+            
+            <div class="icon">
+                <i class="fas fa-3x fa-step-backward" id="previous"></i>
+                <i class="fas fa-3x fa-play-circle" id="masterPlay"></i>
+                <i class="fas fa-3x fa-step-forward" id="next"></i>
+            </div>
+            
+             
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const hamburger = document.getElementById('hamburger');
+          const navLinks = document.getElementById('nav-links');
+      
+          hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+          });
+        });
+      </script>
+</body>
+`
+</html>
